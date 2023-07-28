@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background: url("../assect/etno.jpg");
+    padding: 40px 0;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.floor-select {
+    text-align: center;
+    background: #8a6858;
+    width: 40%;
+    height: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.floor-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.floor-select ul li {
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #AAA;
+    margin: 13px;
+    border-radius: 50%;
+    border: 2px solid #DDD;
+    list-style-type: none;
+    background-color: #FFF;
+}
+
+.floor-select ul li:hover {
+    background: #656565;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.building {
+    width: 40%;
+    background-color: #8a6858;
+    height: 500px;
+    box-shadow: 0 -20px 0 #251e1b;
+}
+
+.elevatorShaft {
+    background: #362E2B;
+    width: 33.33%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.elevatorContainer {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.elevator {
+    height: 20%;
+    width: 100%;
+    background: url("../assect/i2.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    transition: all 1.2s;
+}
+
+.buttonUp,
+.buttonDown,
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d9d32e;
+    box-shadow: 0 2px #4008eaa2;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+}
+
+.buttonUp:hover {
+    background-color: #751907;
+}
+
+.buttonDown:hover {
+    background-color: #751907;
+}
+
+.btn:hover {
+    background-color: #751907;
+}
+
+@keyframes slideSecond {
+    0% {
+
+        transform: translateY(0);
+    }
+
+    100% {
+
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slideThird {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes slideFourth {
+    0% {
+
+        transform: translateY(0);
+    }
+
+    100% {
+
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes slideFifth {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-400px);
+    }
+}
+
+.slideSecond {
+    animation: slideSecond 2.2s ease-in !important;
+    animation-fill-mode: forwards !important;
+}
+
+.slideThird {
+    animation: slideThird 2.2s ease-in !important;
+    animation-fill-mode: forwards !important;
+}
+
+.slideFourth {
+    animation: slideFourth 2.2s ease-in !important;
+    animation-fill-mode: forwards !important;
+}
+
+.slideFifth {
+    animation: slideFifth 2.2s ease-in !important;
+    animation-fill-mode: forwards !important;
+}
